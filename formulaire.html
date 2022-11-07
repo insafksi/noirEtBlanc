@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Bienvenue sur ma page Web &amp; formulaire </title>
+   <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/nb.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <img src="/images/image-9.jpeg">
+        <h1>Bienvenue sur ma page Web &amp; formulaire</h1>
+
+    </header>
+   
+    <main id="pageContent">
+        <h1>Contactez-nous</h1>
+        <p>Merci de compléter le formulaire suivant pour nous contacter. Tous les champs de ce formulaire 
+            sont requis.</p> 
+            <form id="frmContact" action="merci.html">
+                <div>
+                    <div>
+                        <label for="fName"> Prénom </label> 
+                        <input type="text" name="fName" id="fName" required autofocus title="Entrez votre prénom" placeholder="Votre prénom">
+                    </div>
+                    <div>
+                        <label for="lName"> Nom de famille </label> 
+                        <input type="text" name="lName" id="lName" required placeholder="Votre Nom">
+                    </div>
+                    <div>
+                        <label for="email"> Votre e-mail</label> 
+                        <input type="email" name="email" id="email" required placeholder="Votre email">
+                    </div>
+                    <div>
+                        <p>Votre genre </p>
+                        <label for="genre"> Homme <input type="radio" name="genre" id="genre" required></label>
+                        <label for="genre">  Femme <input type="radio" name="genre" id="genre" required></label>
+                    </div>
+                        
+                    <div>
+                        <label for="motif">Choisir le motif de contact </label>
+                         <select name="motif" id="motif">
+                          <option value="inscription">Inscription</option>
+                           <option value="facturation">Facturation</option>
+                           <option value="service">Service</option>
+                          <option value="adhésion">Adhésion</option>
+                          </select>
+                     <br><br>
+                    </div>
+                </div>
+    
+                <div> 
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" required placeholder="Votre message" ></textarea>
+                </div>
+                <div>
+                    <label for="myfile"> Choisir un fichier </label>
+                    <input type="file" id="myfile" name="myfile"><br>
+                </div>
+               <button type="submit">Envoyer</button>
+            </form>   
+
+    </main>  <!--Ici se termine le #pageContent-->
+    
+    <footer id="mainFooter">
+        <p>&copy; copyright Insaf-2022</p>
+        </footer>
+</body>
+</html>
